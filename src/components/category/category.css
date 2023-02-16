@@ -6,11 +6,6 @@
     border-radius: 0;
     text-align: center;
   }
-  .category p {
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 600;
-  }
   .category img {
     width: 100%;
     height: 250px;
@@ -37,15 +32,6 @@
     width: 100%;
     z-index: 2;
     color: #fff;
-  }
-  .category .overlay h4 {
-    font-weight: 500;
-    color: rgb(253, 246, 126);
-  }
-  .category .overlay p {
-    color: #fff;
-    font-weight: 300;
-    padding: 15px;
   }
   /*---------------control-btn-------------*/
   .control-btn button {

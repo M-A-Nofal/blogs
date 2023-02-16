@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import './details.css'
 import { useSelector } from 'react-redux'
+import NotFoundPage from '../notfoundpage/NotFoundPage';
 
 function DetailsPages() {
   const {title} = useParams();
@@ -26,7 +27,7 @@ function DetailsPages() {
   },[])
 
   return (
-    <>
+    <div className=' min-vh-100'>
       {blogs ? (
         <section className='pt-5 detailsPage'>
             <div className='left'>
@@ -39,8 +40,9 @@ function DetailsPages() {
               <p>Author: {blogs.author ? blogs.author : 'Unknown'}</p>
             </div>
         </section>
-      ) : null}
-    </>
+      ): 
+      <NotFoundPage /> }
+    </div>
   )
 }
 

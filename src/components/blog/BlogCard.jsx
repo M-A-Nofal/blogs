@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import { Col, Row } from 'react-bootstrap';
-import { AiOutlineTags, AiOutlineClockCircle, AiOutlineComment, AiOutlineShareAlt } from "react-icons/ai"
+import { AiOutlineTags, AiOutlineClockCircle } from "react-icons/ai"
 import { Link } from "react-router-dom"
 import './blog.css'
 
@@ -9,7 +9,7 @@ function BlogCard({items}) {
 
     return (
         <section className='blog mt-5 '>
-            <Row md={2} xs={1} lg={3} className='g-3'>
+            <Row xs={1} sm={2} md={3} lg={4} className='g-3'>
                 {items.filter((item) => item.urlToImage !== null).map((item) => (
                     <Col  key={item.title}>
                         <Card className='boxItems'>
@@ -27,8 +27,6 @@ function BlogCard({items}) {
                                 </Card.Text>
                                 <div className='date'>
                                     <AiOutlineClockCircle className='icon' /> <label htmlFor=''>{item.publishedAt}</label>
-                                    <AiOutlineComment className='icon' /> <label htmlFor=''>27</label>
-                                    <AiOutlineShareAlt className='icon' /> <label htmlFor=''>SHARE</label>
                                 </div>
                             </Card.Body>
                         </Card>

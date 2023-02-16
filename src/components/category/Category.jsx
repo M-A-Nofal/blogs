@@ -65,10 +65,7 @@ function Category() {
                 <div className='box'>
                   <img src={item.cover} alt='cover'/>
                 </div>
-                <div className='overlay'>
-                  <h4>{item.category}</h4>
-                  <p>{item.title}</p>
-                </div>
+                <div className='overlay'></div>
               </div>
             ))}
           </Slider>
